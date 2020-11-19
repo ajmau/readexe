@@ -10,6 +10,7 @@ int main(int argc, char **argv) {
 
     string pid = "";
     string output_file;
+    // asetukset voisivat olla globaaleja, varsinkin näin pienessä ohjelmassa
     Settings settings;
 
     settings.force = false;
@@ -19,7 +20,7 @@ int main(int argc, char **argv) {
 
     // luetaan ohjelman argumentit
     int opt;
-    while ((opt = getopt(argc, argv, ":h:p:fo:xsF")) != EOF) {
+    while ((opt = getopt(argc, argv, "hp:fo:xsF")) != EOF) {
         switch (opt) {
             // jos ohjelmalle on annettu -h parametri, printataan esimerkki ohjelman käytöstä
             case 'h': print_help(argv[0]); exit(0);

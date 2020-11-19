@@ -1,6 +1,8 @@
 #pragma once
-#include <string>
 
+/*
+    Taulukko tässä tilanteessa on turha, mutta käytän sitä harjoituksen vuoksi.
+*/
 typedef struct {
     bool force;
     bool exec;
